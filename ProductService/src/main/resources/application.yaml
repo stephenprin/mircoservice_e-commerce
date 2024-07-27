@@ -4,14 +4,14 @@ spring:
   application:
     name:  product-service
   config:
-    import: configserver:http://localhost:9296
+    import:
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:3306/productdb
+    url:
     username: root
-    password: 07065995236Pri.
+    password:
     driverClassName: com.mysql.cj.jdbc.Driver
   jpa:
-    datasource_platform: org.hibernate.dialect.MySQL57InnoDBDialect
+    datasource_platform:
     hibernate:
       ddl-auto: update
       show-sql: true
